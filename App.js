@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { Header } from 'react-native-elements';
 import { SafeAreaView, SafeAreaProvider, SafeAreaInsetsContext, useSafeAreaInsets, initialWindowMetrics} from "react-native-safe-area-context";
-import { db } from "./database";
+import  db from "./database";
 
 export default class App extends React.Component{
 

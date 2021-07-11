@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput, View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { Header } from 'react-native-elements';
 import { SafeAreaView, SafeAreaProvider, SafeAreaInsetsContext, useSafeAreaInsets, initialWindowMetrics} from "react-native-safe-area-context";
-import  db from "./database";
+import db from "./database";
 
 export default class App extends React.Component{
 
@@ -54,7 +54,7 @@ try{
 <TextInput
         style={{ height: 40,width:200,borderColor: 'gray', borderWidth: 1 ,alignItems:'center',justifyContent:'center',textAlign:'justify'}}
         onChangeText={(text) => {this.setState({wordSearched:text})}}
-        value={this.state.wordSearched}
+        placeholder={this.state.wordSearched}
      />
 <TouchableOpacity style={styles.button} onPress={()=>{
   this.getword(this.state.wordSearched);
@@ -84,7 +84,7 @@ try{
   </Text>
 
   <Text style={ {fontSize: 18 }}>
-  {this.state.definition}
+  {this.state.defination}
   </Text>
 </View>
 
